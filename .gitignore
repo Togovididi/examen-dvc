@@ -1,2 +1,18 @@
-/venv
-/clean_data.csv
+# Environnement virtuel
+env/
+.venv/
+venv/
+
+# Caches Python
+__pycache__/
+*.pyc
+
+# Données et modèles suivis par DVC (générés par la pipeline)
+# NB : DVC ajoute lui-même les sorties (outs) au .gitignore lors de `dvc repro`.
+/data/raw
+/data/processed
+/data/predictions.csv
+/models/*.pkl
+
+# OS
+.DS_Store
